@@ -98,7 +98,7 @@ function CustomTooltip({ active, payload }: PerformanceTooltipProps) {
 }
 
 export function PerformanceChart() {
-  const [period, setPeriod] = useState('1y');
+  const [period, setPeriod] = useState<'1m' | '3m' | '6m' | 'ytd' | '1y' | 'all'>('1y');
   const data = dataByPeriod[period];
   // Ponto selecionado: último do período
   const selectedIdx = data.length - 1;
@@ -123,7 +123,7 @@ export function PerformanceChart() {
                 <button
                   key={p.value}
                   onClick={() => {
-                    setPeriod(p.value);
+                    setPeriod(p.value as '1m' | '3m' | '6m' | 'ytd' | '1y' | 'all');
                     setShowDropdown(false);
                   }}
                   className={`w-full text-left px-4 py-2 text-sm hover:bg-[#00FF85]/10 ${period === p.value ? 'text-[#00FF85]' : 'text-white'}`}
