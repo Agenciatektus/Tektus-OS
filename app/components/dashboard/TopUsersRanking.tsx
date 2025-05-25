@@ -103,7 +103,9 @@ export function TopUsersRanking() {
             {/* Posição */}
             <div className="w-full flex justify-center">
               {user.position === 1 ? (
-                <Award className="text-yellow-400" size={20} title="1º lugar" />
+                <Award className="text-yellow-400" size={20}>
+                  <title>1º lugar</title>
+                </Award>
               ) : (
                 <span className="font-bold text-lg text-gray-300">{user.position}º</span>
               )}
