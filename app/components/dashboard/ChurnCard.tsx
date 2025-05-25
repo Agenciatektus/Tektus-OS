@@ -91,7 +91,7 @@ export function ChurnCard() {
                 <button
                   key={p.value}
                   onClick={() => {
-                    setPeriod(p.value);
+                    setPeriod(p.value as '6m' | 'ytd' | '12m');
                     setShowDropdown(false);
                   }}
                   className={`w-full text-left px-4 py-2 text-sm hover:bg-[#FF4D97]/10 ${period === p.value ? 'text-[#FF4D97]' : 'text-white'}`}
