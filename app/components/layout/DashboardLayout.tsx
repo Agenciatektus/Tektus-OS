@@ -12,6 +12,7 @@ import {
   Sun,
   Menu as MenuIcon
 } from 'lucide-react';
+import Image from 'next/image';
 
 const menuItems = [
   { icon: <LayoutDashboard size={18} />, label: 'Dashboard' },
@@ -54,15 +55,19 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
           <div className="flex items-center justify-between p-4 h-16">
             <div className="transition-all duration-300 flex items-center">
               {sidebarOpen ? (
-                <img
+                <Image
                   src="/logo-tektus/logo-tektus-os-degrade-padrao.svg"
                   alt="Logo Tektus OS"
+                  width={64}
+                  height={32}
                   className="h-8 w-auto transition-all duration-300"
                 />
               ) : (
-                <img
+                <Image
                   src="/logo-tektus/Favicon-OS-dragrade-sem-fundo.svg"
                   alt="Favicon Tektus OS"
+                  width={32}
+                  height={32}
                   className="h-8 w-8 transition-all duration-300"
                 />
               )}
@@ -133,7 +138,7 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                 <Sun size={22} className="text-white group-hover:text-[#00FF85]" />
               </button>
               <div className="flex items-center gap-2 bg-[#101212] rounded-full px-3 py-1">
-                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" className="w-9 h-9 rounded-full object-cover border-2 border-[#00FF85]/40" />
+                <Image src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" width={36} height={36} className="w-9 h-9 rounded-full object-cover border-2 border-[#00FF85]/40" />
                 <div className="hidden md:block">
                   <div className="text-white font-semibold text-sm">Usuário</div>
                   <div className="text-xs text-gray-400">usuario@email.com</div>

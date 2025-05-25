@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 import { Mail, Phone, Linkedin, Instagram, Search, Briefcase, Users } from 'lucide-react';
 
 const equipe = [
@@ -126,7 +127,7 @@ export function TeamGallery() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {membrosFiltrados.map(m => (
           <div key={m.id} className="bg-[#161817] rounded-xl p-4 flex flex-col items-center shadow-lg hover:shadow-2xl hover:bg-[#00FF85]/10 transition-all duration-300 group">
-            <img src={m.foto} alt={m.nome} className="w-20 h-20 rounded-full object-cover border-4 border-[#23242b] group-hover:border-[#00FF85] transition-all duration-300" />
+            <Image src={m.foto} alt={m.nome} width={80} height={80} className="w-20 h-20 rounded-full object-cover border-4 border-[#23242b] group-hover:border-[#00FF85] transition-all duration-300" />
             <div className="mt-3 text-center w-full">
               <div className="text-lg font-bold text-white flex items-center justify-center gap-2">
                 <span className={`w-3 h-3 rounded-full inline-block border-2 border-[#23242b] ${m.online ? 'bg-green-500' : 'bg-gray-500'}`}

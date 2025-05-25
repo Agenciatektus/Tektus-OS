@@ -1,4 +1,5 @@
 import { ArrowUpRight, ArrowDownRight, MoreVertical, Clock, CheckCircle, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const users = [
   {
@@ -93,7 +94,7 @@ export function TopUsersRanking() {
           <li key={idx} className="grid grid-cols-[minmax(180px,2fr)_60px_90px_90px_110px_70px_110px_40px] gap-2 items-center py-3 px-2">
             {/* Colaborador */}
             <div className="flex items-center gap-3 overflow-hidden">
-              <img src={user.avatar} alt={user.name} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
+              <Image src={user.avatar} alt={user.name} width={40} height={40} className="w-10 h-10 rounded-full object-cover flex-shrink-0" />
               <div className="truncate">
                 <div className="font-semibold text-sm truncate">{user.name}</div>
                 <div className="text-xs text-gray-400 truncate">{user.role}</div>

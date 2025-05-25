@@ -20,7 +20,7 @@ const data = {
 const COLORS = ['#00FF85', '#00B86B']; // Verde claro e verde escuro para contraste
 
 export function MonthRevenueCard() {
-  const [period, setPeriod] = useState('current');
+  const [period, setPeriod] = useState<'current' | '3m' | '6m' | 'year'>('current');
   const [showDropdown, setShowDropdown] = useState(false);
   const [types, setTypes] = useState({ recorrente: true, pontual: true });
 
@@ -53,7 +53,7 @@ export function MonthRevenueCard() {
                 <button
                   key={p.value}
                   onClick={() => {
-                    setPeriod(p.value);
+                    setPeriod(p.value as 'current' | '3m' | '6m' | 'year');
                     setShowDropdown(false);
                   }}
                   className={`w-full text-left px-4 py-2 text-sm hover:bg-[#00FF85]/10 ${period === p.value ? 'text-[#00FF85]' : 'text-white'}`}
