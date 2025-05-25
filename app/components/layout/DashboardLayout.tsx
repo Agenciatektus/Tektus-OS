@@ -22,27 +22,6 @@ const menuItems = [
   { icon: <FileText size={18} />, label: 'Documentos' },
 ];
 
-const notifications = [
-  {
-    id: 1,
-    avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
-    title: 'Justin Verduzco',
-    description: 'Your task changed an issue from "In Progress" to ',
-    tag: 'Review',
-    tagColor: 'bg-green-600',
-    time: '1 HOUR AGO',
-    isNew: true,
-  },
-  {
-    id: 2,
-    icon: <CheckCircle2 className="text-blue-400" size={24} />,
-    title: 'New order has been placed',
-    description: 'Open the order confirmation or shipment confirmation.',
-    time: '5 HOURS AGO',
-    isNew: false,
-  },
-];
-
 interface DashboardLayoutProps {
   children: ReactNode;
 }
