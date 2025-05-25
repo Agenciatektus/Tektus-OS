@@ -62,7 +62,7 @@ function CustomTooltip({ active, payload }: ChurnTooltipProps) {
 }
 
 export function ChurnCard() {
-  const [period, setPeriod] = useState('6m');
+  const [period, setPeriod] = useState<'6m' | 'ytd' | '12m'>('6m');
   const [showDropdown, setShowDropdown] = useState(false);
   const data = churnData[period];
   const last = data[data.length - 1];
