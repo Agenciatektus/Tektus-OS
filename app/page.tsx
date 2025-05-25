@@ -2,7 +2,6 @@
 
 import { DashboardLayout } from './components/layout/DashboardLayout';
 import { StatCard } from './components/dashboard/StatCard';
-import { ChartCard } from './components/dashboard/ChartCard';
 import { TopUsersRanking } from './components/dashboard/TopUsersRanking';
 import { PerformanceChart } from './components/dashboard/PerformanceChart';
 import { MonthRevenueCard } from './components/dashboard/MonthRevenueCard';
@@ -14,22 +13,6 @@ import {
   Calendar, 
   MessageSquare 
 } from 'lucide-react';
-
-const salesData = [
-  { name: 'Jan', value: 4000 },
-  { name: 'Fev', value: 3000 },
-  { name: 'Mar', value: 2000 },
-  { name: 'Abr', value: 2780 },
-  { name: 'Mai', value: 1890 },
-  { name: 'Jun', value: 2390 },
-];
-
-const clientDistributionData = [
-  { name: 'Recorrentes', value: 400 },
-  { name: 'Pontuais', value: 300 },
-  { name: 'Finalizados', value: 200 },
-  { name: 'Prospectos', value: 100 },
-];
 
 export default function DashboardPage() {
   return (

@@ -79,7 +79,12 @@ const dataByPeriod = {
   ],
 };
 
-function CustomTooltip({ active, payload }: any) {
+interface PerformanceTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload: { value: number; change: number } }>;
+}
+
+function CustomTooltip({ active, payload }: PerformanceTooltipProps) {
   if (active && payload && payload.length) {
     const { value, change } = payload[0].payload;
     return (

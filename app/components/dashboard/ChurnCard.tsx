@@ -42,7 +42,12 @@ const churnData = {
   ],
 };
 
-function CustomTooltip({ active, payload }: any) {
+interface ChurnTooltipProps {
+  active?: boolean;
+  payload?: Array<{ payload: { name: string; churn: number; lost: number; base: number } }>;
+}
+
+function CustomTooltip({ active, payload }: ChurnTooltipProps) {
   if (active && payload && payload.length) {
     const { name, churn, lost, base } = payload[0].payload;
     return (

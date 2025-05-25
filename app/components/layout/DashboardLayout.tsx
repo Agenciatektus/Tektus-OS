@@ -10,10 +10,7 @@ import {
   ChevronDown,
   Bell,
   Sun,
-  Moon,
-  User,
   Menu as MenuIcon,
-  LogOut,
   CheckCircle2
 } from 'lucide-react';
 
@@ -52,8 +49,7 @@ interface DashboardLayoutProps {
 
 export function DashboardLayout({ children }: DashboardLayoutProps) {
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  const [darkMode, setDarkMode] = useState(true);
-  const [userMenuOpen, setUserMenuOpen] = useState(false);
+  const [darkMode] = useState(true);
   const [notifOpen, setNotifOpen] = useState(false);
   const notifRef = useRef<HTMLDivElement>(null);
 

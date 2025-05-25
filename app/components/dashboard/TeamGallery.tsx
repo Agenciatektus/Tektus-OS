@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, Linkedin, Instagram, User, Search, Briefcase, Users, CheckCircle, XCircle } from 'lucide-react';
+import { Mail, Phone, Linkedin, Instagram, Search, Briefcase, Users } from 'lucide-react';
 
 const equipe = [
   {
