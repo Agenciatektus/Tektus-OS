@@ -10,8 +10,7 @@ import {
   ChevronDown,
   Bell,
   Sun,
-  Menu as MenuIcon,
-  CheckCircle2
+  Menu as MenuIcon
 } from 'lucide-react';
 
 const menuItems = [
