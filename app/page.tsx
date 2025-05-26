@@ -18,7 +18,7 @@ export default function DashboardPage() {
   return (
     <DashboardLayout>
       <div className="space-y-6">
-        <h1 className="text-3xl font-bold">Bem-vindo ao Tektus SO</h1>
+        <h1 className="text-3xl font-bold">Seja bem-vindo, Peterson</h1>
         
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
