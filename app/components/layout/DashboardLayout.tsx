@@ -158,21 +158,21 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
                       <li className="px-4 py-3 flex items-start gap-3 hover:bg-[#00FF85]/5 cursor-pointer">
                         <span className="w-2 h-2 mt-2 rounded-full bg-[#00FF85]"></span>
                         <div>
-                          <div className="text-sm text-white">Nova tarefa criada: "Atualização do site"</div>
+                          <div className="text-sm text-white">Nova tarefa criada: &quot;Atualização do site&quot;</div>
                           <div className="text-xs text-gray-400">Há 5 minutos</div>
                         </div>
                       </li>
                       <li className="px-4 py-3 flex items-start gap-3 hover:bg-[#00FF85]/5 cursor-pointer">
                         <span className="w-2 h-2 mt-2 rounded-full bg-[#00FF85]"></span>
                         <div>
-                          <div className="text-sm text-white">Novo cliente adicionado: "Empresa XYZ"</div>
+                          <div className="text-sm text-white">Novo cliente adicionado: &quot;Empresa XYZ&quot;</div>
                           <div className="text-xs text-gray-400">Há 15 minutos</div>
                         </div>
                       </li>
                       <li className="px-4 py-3 flex items-start gap-3 hover:bg-[#00FF85]/5 cursor-pointer">
                         <span className="w-2 h-2 mt-2 rounded-full bg-[#00FF85]"></span>
                         <div>
-                          <div className="text-sm text-white">Reunião agendada: "Planejamento Q3"</div>
+                          <div className="text-sm text-white">Reunião agendada: &quot;Planejamento Q3&quot;</div>
                           <div className="text-xs text-gray-400">Há 1 hora</div>
                         </div>
                       </li>

@@ -98,4 +98,9 @@ Contribuições são bem-vindas! Recomenda-se acompanhar os commits e issues par
 ---
 
 ## 📝 Licença
-MIT
+
+Este projeto está sob licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+---
+
+Desenvolvido por Agência Tektus.
